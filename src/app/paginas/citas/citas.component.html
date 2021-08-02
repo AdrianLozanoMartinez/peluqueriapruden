@@ -1,0 +1,41 @@
+<br><br>
+<h3 class="mt-5"><u>Gestionar citas</u></h3>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-right">
+          <!-- <button class="btn btn-outline-info" routerLink="/pedir/nuevo"><i class="fa fa-plus"></i>Coger cita</button> -->
+  <!-- <table *ngIf="!variablecargando && unomodel2.length > 0" class="table mt-3"> -->
+      <h6><b>Pida su cita por teléfono: <u style="color:olive;">607141822</u></b></h6>
+            <table class="table mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <!-- <th scope="col">#</th> -->
+                    <th scope="col">Día</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Disponibilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let citas of verCitas; let i = index">
+                    <!-- <th scope="row">{{i + 1}}º</th> -->
+                    <td>{{citas.dia}}</td>
+                    <th>{{citas.hora}}</th>
+                    <td><p class="badge badge-danger">Cita cogida</p></td>
+                </tr>
+                </tbody>
+            </table>
+    <!-- <div *ngIf="variablecargando" class="alert aler-info text-center mt-3">
+    <h4 class="alert-heading">Cargando</h4>
+    <p>
+        <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    </p>
+    <p class="mb-0">Espere por favor</p>
+    </div>
+
+    <div *ngIf="!variablecargando && unomodel2.length === 0" class="alert aler-warnin text-center mt-3">
+    <h4 class="alert-heading">No hay registro</h4>
+    <p>
+        <i class="fa fa-exclamation fa-3x fa-fw"></i>
+    </p>
+    </div> -->
+    </div>
+</div>

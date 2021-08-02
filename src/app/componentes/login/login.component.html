@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">   
+
+            <h5 class="container2 mt-5" style="color: black">LOGIN</h5>
+            
+              <form (ngSubmit)="login(variableLogin)" #variableLogin="ngForm"class="form form-register">
+            
+                <span *ngIf="variableLogin.submitted && variableLogin.controls['email'].errors" class="text-danger">El correo es obligatorio</span>
+                <div class="form-group">
+                  <input name="email" type="email" class="form-control" style="max-width: 500px;" required email [(ngModel)]="usuario.email" placeholder="Email">
+                </div>
+                  <span *ngIf="variableLogin.submitted && variableLogin.controls['password'].errors" class="text-danger">Al menos 6 caracteres</span>
+                  <div class="form-group">
+                    <input name="password" type="password" class="form-control" style="max-width: 500px;" required minlength="6" [(ngModel)]="usuario.password" placeholder="Password">
+                  </div>
+                  <div class="form-group form-check">
+                      <input [(ngModel)]="botonRecordar" name="recordar" type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Recordar mi usuario</label>
+                  </div>
+            
+                  <button type="submit" class="btn btn-dark">Ingresar</button>
+                  <br><br><br><br><br><br><br><br><br><br>
+                </form>  
+        
+    </div>
+</div>
+</div>

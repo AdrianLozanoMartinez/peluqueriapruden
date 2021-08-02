@@ -1,0 +1,15 @@
+.pantallafotos{
+    width: 850px;
+    height: 300px;
+}
+
+@media screen and (max-width:575px) {
+        .pantallafotos{
+            width: 350px;
+            height: 350px;
+            margin-top: 25%;
+        }
+}
+
+
+

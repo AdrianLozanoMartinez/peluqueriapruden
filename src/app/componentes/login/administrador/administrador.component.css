@@ -1,0 +1,25 @@
+@media (max-width:768px){
+    img{
+        width: 300px;
+        background-position: top;
+        position: center;
+    }
+  }
+
+.a{
+
+    right: 0;;
+    position: absolute;
+}
+.b{
+
+    left: 0;
+    position: absolute;
+}
+
+h3{
+    position: center;
+    top: 0;
+    text-align: center;
+}
+

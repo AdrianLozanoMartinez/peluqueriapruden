@@ -1,0 +1,51 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+            <h3 class="container2 mt-5"><u>Insertar cita</u></h3>
+            <hr>
+                <form (ngSubmit)="guardar(sacarDatos)" #sacarDatos="ngForm">
+
+                    <div class="form-row">
+                        <div class="col">
+                          <label class="col-2 col-form-label">Día</label>
+                            <input type="date" class="form-control" placeholder="Seleccione día" name="diacliente" [(ngModel)]="clienteModel.dia">
+                        </div>
+                        <div class="col">
+                          <label class="col-2 col-form-label">Hora</label>
+                          <input type="time" class="form-control" placeholder="Seleccione hora" name="horacliente" [(ngModel)]="clienteModel.hora">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col">
+                          <label class="col-2 col-form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre del cliente" name="nombrecliente" [(ngModel)]="clienteModel.nombre">
+                        </div>
+                        <div class="col">
+                          <label class="col-2 col-form-label">Apellidos</label>
+                          <input type="text" class="form-control" placeholder="Apellidos del cliente" name="apellidocliente" [(ngModel)]="clienteModel.apellidos">
+                        </div>
+                        <div class="col">
+                            <label class="col-2 col-form-label">Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="+34 - XXX - XXX - XXX" name="telefonocliente" [(ngModel)]="clienteModel.telefono">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <br>
+                    
+                    <div class="form-group text-center">
+                        <button class="btn btn-outline-info b" routerLink="/ver"><i class="fa fa-eye" aria-hidden="true"></i>     Ver citas</button>
+                        <button type="submit" class="btn btn-outline-dark w-25 c"><i class="fa fa-save"></i> Guardar</button>
+                        <button class="btn btn-outline-danger a" (click)="salir()"><i class="fa fa-reply" aria-hidden="true">       Salir del <br>administrador</i></button> 
+                    </div>
+                </form>                   
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+ 
+        </div>
+    </div>
+</div>
+

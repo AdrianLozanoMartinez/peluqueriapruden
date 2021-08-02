@@ -1,0 +1,14 @@
+.a{
+
+    right: 0;;
+    position: absolute;
+}
+.b{
+
+    left: 0;
+    position: absolute;
+}
+.c{
+    margin: 0;
+    /* padding: 0; */
+}
